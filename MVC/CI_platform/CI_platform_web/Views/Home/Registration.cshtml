@@ -1,8 +1,10 @@
+﻿@{
+    Layout = "";
+}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Forgot Password</title>
+    <title>Registration</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -10,8 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="\css\loginStyle.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -27,7 +28,7 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item">
-                      <img src="images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                      <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                         class="d-block w-100" alt="...">
                       <div class="carousel-caption ">
                         <h5>Sed ut perspiciatis unde omnis iste natus voluptatem.</h5>
@@ -39,7 +40,7 @@
                       </div>
                     </div>
                     <div class="carousel-item active">
-                      <img src="images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                      <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                         class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Sed ut perspiciatis unde omnis iste natus voluptatem.</h5>
@@ -51,7 +52,7 @@
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                      <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                         class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Sed ut perspiciatis unde omnis iste natus voluptatem.</h5>
@@ -63,7 +64,7 @@
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+                      <img src="\images\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                         class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Sed ut perspiciatis unde omnis iste natus voluptatem.</h5>
@@ -88,18 +89,24 @@
                 </div>
               </div>
             <div class="col-md-12 col-lg-4">
-                <form id="space">
-                    <h4 id="center">Forgot Password</h4>
-                    <p id="center">Enter your email address you've using for your account below and we will send you a
-                        password reset link</p>
-                    <br>
-                    <p id="color">Email Address</p>
-                    <input type="text" class="form-control center-block" placeholder="Enter your email address..."><br>
-                    <button id="btn" class="form-control center-block" style="margin-top: 30px;">Reset my
-                        Password</button><br>
-                    <button class="form-control" style="border: 0px;background-color: white;">Login</button>
+                <form id="sp">
+                    <label id="color">First Name</label>
+                    <input type="text" class="form-control center-block" placeholder="evan" required><br>
+                    <label id="color">Last Name</label>
+                    <input type="text" class="form-control center-block" placeholder="donohue" required><br>
+                    <label id="color">Phone Number</label>
+                    <input type="text" class="form-control center-block" placeholder="8923454615" required><br>
+                    <label id="color">Email Address</label>
+                    <input type="text" class="form-control center-block" placeholder="evan.donohue@gmail.com" required><br>
+                    <label id="color">Password</label>
+                    <input type="password" class="form-control center-block" placeholder="**********" required><br>
+                    <label id="color">Confirm Password</label>
+                    <input type="password" class="form-control center-block" placeholder="**********" required><br>
+                    <button id="btn" class="form-control center-block">Register</button><br>
+                    <p id="center"><a href="#" id="color" style="text-decoration: none;">Lost your password?</a></p>
+                    <p id="center">Already registered? <span><a href="#">Login now</a></span></p>
                 </form>
-                <footer class="footer">Privacy Policy</footer>
+                <footer id="f1">Privacy Policy</footer>
             </div>
         </div>
     </div>

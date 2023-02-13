@@ -23,6 +23,16 @@ namespace CI_platform_web.Controllers
             return View();
         }
 
+        public IActionResult Reset_pswd()
+        {
+            return View();
+        }
+
+        public IActionResult Registration()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
