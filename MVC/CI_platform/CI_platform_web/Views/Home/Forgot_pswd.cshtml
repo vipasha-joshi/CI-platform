@@ -26,7 +26,6 @@
                     <button data-bs-target="#Carousel" data-bs-slide-to="1" class="active"></button>
                     <button data-bs-target="#Carousel" data-bs-slide-to="2"></button>
                     <button data-bs-target="#Carousel" data-bs-slide-to="3"></button>
-        
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item">
@@ -97,10 +96,10 @@
                         password reset link</p>
                     <br>
                     <p id="color">Email Address</p>
-                    <input type="text" class="form-control center-block" placeholder="Enter your email address..."><br>
-                    <button id="btn" class="form-control center-block" style="margin-top: 30px;">Reset my
+                    <input type="text" class="form-control center-block" placeholder="Enter your email address..." required><br>
+                    <button id="btn" class="form-control center-block" style="margin-top: 30px;" asp-controller="Home" asp-action="Reset_pswd">Reset my
                         Password</button><br>
-                    <button class="form-control" style="border: 0px;background-color: white;">Login</button>
+                    <p id="center"><a asp-controller="Home" asp-action="Index" id="color" style="text-decoration: none;">Login</a></p>
                 </form>
                 <footer class="footer">Privacy Policy</footer>
             </div>

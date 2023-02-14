@@ -95,8 +95,8 @@
                     <label>Password</label>
                     <input type="password" name="password" class="form-control center-block" placeholder="**********" required><br>
                     <button id="btn" class="form-control center-block">Login</button><br>
-                    <p id="center"><a href="#" id="color" style="text-decoration: none;">Lost your password?</a></p>
-                    <p id="center">Don't have an account? <span><a href="#">Create an account</a></span></p>
+                    <p id="center"><a id="color" style="text-decoration: none;" asp-controller="Home" asp-action="Forgot_pswd">Lost your password?</a></p>
+                    <p id="center">Don't have an account? <span><a asp-controller="Home" asp-action="Registration">Create an account</a></span></p>
                 </form>
                 <footer class="footer">Privacy Policy</footer>
             </div>
