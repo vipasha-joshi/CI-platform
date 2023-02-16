@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Listing</title>
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar nav" id="large">
+        <div class="container row">
+            <div class="col-lg-4 col-md-2 text-end">
+                <a href="#" style="text-decoration: none; color: #333333;">Stories</a>
+            </div>
+            <div class="dropdown col-lg-6 col-md-2">
+                <a href="#" class="dropdown" data-bs-toggle="dropdown"
+                    style="text-decoration: none; color: #333333;">Policy
+                    <img src="./images/drop-down.png"></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                </ul>
+            </div>
+            <div class="dropdown col-lg-2 col-md-2">
+                <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
+                    style="border: none; background-color: white;">
+                    <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
+                    <span id="drpdwn">Evan Donohue</span>
+                    <img src="./images/drop-down.png" id="drpdwn">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <nav class="navbar nav" id="small">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/user-img.png" width="40px" height="40px" class="rounded-5"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="./images/list.png">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mt-3 mt-lg-0">
+                    <li class="nav-item mx-2 mx-lg-1">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            Stories
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2 mx-lg-1">
+                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
+                            style="text-decoration: none; color: #333333;">Policy
+                            <img src="./images/drop-down.png"></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2 mx-lg-1 mt-2">
+                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
+                            style="text-decoration: none; color: #333333;">Evan Donohue
+                            <img src="./images/drop-down.png"></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <hr style="margin:0px;">
+    <div class="container row">
+        <div class="col-lg-1 text-end mt-2">
+            <img src="./images/search.png" alt="search" id="search">
+        </div>
+        <div class="col-lg-6 mt-1 col-md-12 col-sm-4">
+            <input class="form-control" type="text" placeholder="Search mission..." aria-label="Search"
+                style="border: none;">
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">Country
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">City
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">Theme
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">Skills
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+    </div>
+    <hr style="margin: 0px;">
+</body>
+</html>
