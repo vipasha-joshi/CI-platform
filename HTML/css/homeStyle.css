@@ -23,3 +23,20 @@ body {
         display: none;
     }
 }
+#sort{
+    font-size: 10px;
+    border-radius:50px; 
+    color:gray;
+    margin: 10px 2px 2px 10px;
+    --bs-btn-hover-bg : white;
+}
+#m{
+    margin: 10px 0px 0px 50px;
+}
+#overlap{
+    text-decoration: none;
+    border-radius: 50px;
+    background-color:white;
+    margin-top: -20px;
+    width: fit-content;
+  }
