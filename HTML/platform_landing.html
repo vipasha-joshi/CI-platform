@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/homeStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -180,612 +183,734 @@
             </ul>
         </div>
         <div class="col-lg-1">
-            <button type="button" style="border:none; border-radius: 40%;"><img src="images/grid.png"></button>
+            <button type="button" style="border:none; border-radius: 40%;" id="grid-active-btn"><img
+                    src="images/grid.png"></button>
         </div>
         <div class="col-lg-1">
-            <button type="button" style="border:none; border-radius: 50%; background-color: white;"><img
-                    src="images/list.png"></button>
+            <button type="button" style="border:none; border-radius: 50%; background-color: white;"
+                id="details-active-btn"><img src="images/list.png"></button>
         </div>
     </div>
-    <div class="container bg-trasparent my-4 p-3 mx-5">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4">
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
-                            class="card-img-top parent" alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Environment</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Grow Trees On the path to environment sustainability</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">Tree Canada
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until 25\02\2019
-                                </p>
-                            </div>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="item-list">
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Environment</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Toronto
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>10 <br> Seats Left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/deadline.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p>09\01\2019 <br> Deadline</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
                         </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
-                            class="card-img-top parent" alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Children</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Education-Supplies-for-Every--Pair-of-Shoes-Sold</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">Australian Paradise
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until 25\02\2019
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Grow-Trees-On-the-path-to-environment-sustainability</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
                                 </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>250 <br>Seats left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/deadline.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p>09\01\2019 <br> Deadline</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Nourish-the-Children-in--African-country.png" class="card-img-top parent"
-                            alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Nutrition</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Nourish the childern in African Country</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">The Hunger
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br><br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">Ongoing Opportunity
+                                <p class="text-muted">Tree Canada
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
                                 </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>10 <br> Seats Left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/deadline.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p>09\01\2019 <br> Deadline</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container bg-trasparent my-4 p-3 mx-5">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4">
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
-                            class="card-img-top parent" alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Environment</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>CSR-initiative-stands-for-Coffee--and-Farmer-Equity</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">CSE Network
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">Ongoing Opportunity
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Already-volunteered.png" alt="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>250 <br>Already volunteered</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Animal-welfare-&-save-birds-campaign.png" class="card-img-top parent"
-                            alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Animals</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Animal-welfare-&-save-birds-campaign</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">JR Foundation
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br><br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">Plant 10,000 Trees
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>10 <br> Seats Left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-1">
-                                        <img src="images/achieved.png" alt="">
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar"
-                                                style="width: 75%; background-color:#F88634"></div>
+                                <br>
+                                <div class="border-top border-bottom pb-3 position-relative pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/Seats-left.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">10</h5>
+                                                <p class="mb-0">Seats left</p>
+                                            </div>
                                         </div>
-                                        <p>8000 achieved</p>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1  me-2 p-0">
+                                                <img src="images/deadline.png" alt="" width="30px" height="30px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">09/01/2019</h5>
+                                                <p class="mb-0">Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="roundedSection text-center position-absolute text-muted"
+                                        id="missionDeadline">
+                                        <p class="mb-0 px-1"
+                                            style="border: 1px solid gray;border-radius: 50px; background-color: white;">
+                                            From 10/01/2019 until 25/02/2019</p>
                                     </div>
                                 </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Plantation-and-Afforestation-programme.png" class="card-img-top parent"
-                            alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Health</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Plantation-and-Afforestation-programme</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">Amaze Doctors
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br><br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">Plant 10,000 Trees
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
 
-                            <div class="col-lg-1">
-                                <img src="images/achieved.png" alt="">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 75%; background-color:#F88634"></div>
+                                <br>
+                                <div class="d-grid gap-2">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
                                 </div>
-                                <p>8000 achieved</p>
                             </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
                         </div>
                     </div>
                 </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Children</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Melbourne
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Education-Supplies-for-Every--Pair-of-Shoes-Sold</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">Australian Paradise
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <div class="border-top border-bottom pb-3 position-relative pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/Seats-left.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">250</h5>
+                                                <p class="mb-0">Already volunteered</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1  me-2 p-0">
+                                                <img src="images/deadline.png" alt="" width="30px" height="30px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">09/02/2019</h5>
+                                                <p class="mb-0">Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="roundedSection text-center position-absolute text-muted"
+                                        id="missionDeadline">
+                                        <p class="mb-0 px-1"
+                                            style="border: 1px solid gray;border-radius: 50px; background-color: white;">
+                                            From 10/01/2019 until 25/02/2019</p>
+                                    </div>
+                                </div><br>
+                                <div class="d-grid gap-2">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Nourish-the-Children-in--African-country.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Nutrition</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Barcelona
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Nourish-the-Children-in--African-country</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">The Hunger
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <div class="border-top border-bottom pb-3 position-relative pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/Seats-left.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">10</h5>
+                                                <p class="mb-0">Seats left</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1  me-2 p-0">
+                                                <img src="images/deadline.png" alt="" width="30px" height="30px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">09/01/2019</h5>
+                                                <p class="mb-0">Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="roundedSection text-center position-absolute text-muted"
+                                        id="missionDeadline">
+                                        <p class="mb-0 px-1"
+                                            style="border: 1px solid gray;border-radius: 50px; background-color: white;">
+                                            Ongoing Opportunity</p>
+                                    </div>
+                                </div><br>
+                                <div class="d-grid gap-2  ">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Environment</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">London
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>CSR-initiative-stands-for-Coffee--and-Farmer-Equity</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">CSE Network
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <div class="border-top border-bottom pb-3 position-relative pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/Seats-left.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">10</h5>
+                                                <p class="mb-0">Seats left</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="roundedSection text-center position-absolute text-muted"
+                                        id="missionDeadline">
+                                        <p class="mb-0 px-1"
+                                            style="border: 1px solid gray;border-radius: 50px; background-color: white;">
+                                            Ongoing Opportunity</p>
+                                    </div>
+                                </div><br>
+                                <div class="d-grid gap-2  ">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Animal-welfare-&-save-birds-campaign.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Animals</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Cape Town
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Animal-welfare-&-save-birds-campaign</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">JR Foundation
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <div class="border-top border-bottom pb-3 position-relative pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/Seats-left.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <h5 class="mb-0 mt-1">10</h5>
+                                                <p class="mb-0">Seats left</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/achieved.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        style="width: 75%; background-color:#F88634"></div>
+                                                    </div>
+                                                    <div><p>8000 achieved</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="roundedSection text-center position-absolute text-muted"
+                                        id="missionDeadline">
+                                        <p class="mb-0 px-1"
+                                            style="border: 1px solid gray;border-radius: 50px; background-color: white;">
+                                            Plant 10,000 Trees</p>
+                                    </div>
+                                </div>
+                                    <!-- <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-1">
+                                                <img src="images/achieved.png" alt="">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        style="width: 75%; background-color:#F88634"></div>
+                                                </div>
+                                                <p>8000 achieved</p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                <br>
+                                <div class="d-grid gap-2  ">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Plantation-and-Afforestation-programme.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Health</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Paris
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Plantation-and-Afforestation-programme</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">Amaze Doctors
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <div class="border-top border-bottom pb-3 position-relative pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="mt-1 pe-0 me-2">
+                                                <img src="images/achieved.png" alt="" width="25px" height="25px">
+                                            </div>
+                                            <div class="px-0">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar"
+                                                        style="width: 75%; background-color:#F88634"></div>
+                                                    </div>
+                                                    <div><p>8000 achieved</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="roundedSection text-center position-absolute text-muted"
+                                        id="missionDeadline">
+                                        <p class="mb-0 px-1 py-1"
+                                            style="border: 1px solid gray;border-radius: 50px; background-color: white;">
+                                            Plant 10,000 Trees</p>
+                                    </div>
+                                </div><br>
+                                <div class="d-grid gap-2">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Environment</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Toronto
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Grow-Trees-On-the-path-to-environment-sustainability</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">Tree Canada
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <hr>
+                                <div class="row ms-4" style="width:100%">
+                                    <div class="col text-center text-muted"
+                                        style="margin-top:-30px; margin-left: -25px;">
+                                        <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until
+                                            25\02\2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/Seats-left.png" alt="">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <p>10 <br>Seats left</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/deadline.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p>09\01\2019 <br> Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="d-grid gap-2  ">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Children</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png">Melbourne
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Education-Supplies-for-Every--Pair-of-Shoes-Sold</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">Australian Paradise
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <hr>
+                                <div class="row ms-4" style="width:100%">
+                                    <div class="col text-center text-muted"
+                                        style="margin-top:-30px; margin-left: -25px;">
+                                        <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until
+                                            25\02\2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/Seats-left.png" alt="">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <p>250 <br>AlreadyVolunteer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/deadline.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p>09\01\2019 <br> Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="d-grid gap-2  ">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="position-relative">
+                        <a href="#">
+                            <img src="images/Nourish-the-Children-in--African-country.png"
+                                class="card-img-top parent" alt="product.title" />
+                            <button class="btn text-center" id="overlap">Nutrition</button>
+                        </a>
+                        <div class="position-absolute px-1" id="location">
+                            <img src="images/pin.png"> Barcelona
+                        </div>
+                        <div class="position-absolute px-1" id="heart">
+                            <img src="images/heart.png">
+                        </div>
+                        <div class="position-absolute px-1" id="people">
+                            <img src="images/user.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Nourish-the-Children-in--African-country</p>
+                                </h5>
+                                <p class="text-muted">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
+                                    delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
+                                    laboriosam odit rerum optio. Labore corporis ipsum eligendi!
+                                </p>
+                                <p class="text-muted">The Hunger
+                                    <span class="float-end">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/selected-star.png">
+                                        <img src="images/star.png">
+                                        <img src="images/star.png">
+                                    </span>
+                                </p>
+                                <br>
+                                <hr>
+                                <div class="row ms-4" style="width:100%">
+                                    <div class="col text-center text-muted"
+                                        style="margin-top:-30px; margin-left: -25px;">
+                                        <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until
+                                            25\02\2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/Seats-left.png" alt="">
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <p>10 <br>Seats left</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="images/deadline.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <p>09\01\2019 <br> Deadline</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="d-grid gap-2  ">
+                                    <button class="form-control rounded-5 px-3 mx-auto" type="button"
+                                        style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
+                                        <img src="images/right-arrow.png" alt="arrow">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
-    <div class="container bg-trasparent my-4 p-3 mx-5">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4">
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Grow-Trees-On-the-path-to-environment-sustainability.png"
-                            class="card-img-top parent" alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Environment</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Grow Trees On the path to environment sustainability</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">Tree Canada
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until 25\02\2019
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>10 <br> Seats Left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/deadline.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p>09\01\2019 <br> Deadline</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
-                            class="card-img-top parent" alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Children</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Education-Supplies-for-Every--Pair-of-Shoes-Sold</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">Australian Paradise
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">From 10\01\2019 until 25\02\2019
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>250 <br>Seats left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/deadline.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p>09\01\2019 <br> Deadline</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <a href="#">
-                        <img src="images/Nourish-the-Children-in--African-country.png" class="card-img-top parent"
-                            alt="product.title" />
-                    </a>
-                    <button class="btn text-center mx-auto" id="overlap">Nutrition</button>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Nourish the childern in African Country</p>
-                        </h5>
-                        <p class="text-muted">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti voluptatem,
-                            delectus neque tempora facere, enim beatae, quisquam nesciunt deserunt harum tenetur
-                            laboriosam odit rerum optio. Labore corporis ipsum eligendi!
-                        </p>
-                        <p class="text-muted">The Hunger
-                            <span class="float-end">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/selected-star.png">
-                                <img src="images/star.png">
-                                <img src="images/star.png">
-                            </span>
-                        </p>
-                        <br><br>
-                        <hr>
-                        <div class="row ms-4" style="width:100%">
-                            <div class="col text-center text-muted" style="margin-top:-30px; margin-left: -25px;">
-                                <p style="border: 1px solid gray;border-radius: 50px;">Ongoing Opportunity
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/Seats-left.png" alt="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p>10 <br> Seats Left</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <img src="images/deadline.png" alt="">
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p>09\01\2019 <br> Deadline</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="d-grid gap-2 my-4">
-                            <button class="form-control rounded-5 px-3 mx-auto" type="button"
-                                style="color: #F88634; border-color: #F88634; width:fit-content">Apply&emsp;
-                                <img src="images/right-arrow.png" alt="arrow">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="js/homeScript.js"></script>
 </body>
 </html>
