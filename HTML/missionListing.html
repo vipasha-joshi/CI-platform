@@ -15,81 +15,50 @@
 </head>
 
 <body>
-    <nav class="navbar nav" id="large">
-        <div class="container row">
-            <div class="col-lg-4 col-md-2 text-end">
-                <a href="#" style="text-decoration: none; color: #333333;">Stories</a>
-            </div>
-            <div class="dropdown col-lg-6 col-md-2">
-                <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                    style="text-decoration: none; color: #333333;">Policy
-                    <img src="./images/drop-down.png"></a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                </ul>
-            </div>
-            <div class="dropdown col-lg-2 col-md-2">
-                <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
-                    style="border: none; background-color: white;">
-                    <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
-                    <span id="drpdwn">Evan Donohue</span>
-                    <img src="./images/drop-down.png" id="drpdwn">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Help</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </nav>
+    <nav class="container navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar nav" id="small">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./images/user-img.png" width="40px" height="40px"
-                    class="rounded-5"></a>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item active mx-2">
+                    <a class="nav-link" href="#">Stories</a>
+                </div>
+                <div class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Policy
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img src="./images/list.png">
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mt-3 mt-lg-0">
-                    <li class="nav-item mx-2 mx-lg-1">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            Stories
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2 mx-lg-1">
-                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                            style="text-decoration: none; color: #333333;">Policy
-                            <img src="./images/drop-down.png"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">2</a></li>
-                            <li><a class="dropdown-item" href="#">3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2 mx-lg-1 mt-2">
-                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                            style="text-decoration: none; color: #333333;">Evan Donohue
-                            <img src="./images/drop-down.png"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">My Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Help</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
+                        <img src="./images/drop-down.png" id="drpdwn"></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav ">
+                <div class="nav-item dropdown">
+                    <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
+                        style="border: none; background-color: white;">
+                        <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
+                        <span id="drpdwn">Evan Donohue</span>
+                        <img src="./images/drop-down.png" id="drpdwn">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <hr style="margin:0px;">
-    <div class="container row">
+    <div class="container row mx-4">
         <div class="col-lg-1 text-end mt-2">
             <img src="./images/search.png" alt="search" id="search">
         </div>
@@ -113,10 +82,43 @@
             <p class="dropdown mt-2" data-bs-toggle="dropdown">City
                 <img src="./images/drop-down.png" class="float-end mt-2">
             </p>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1</a></li>
-                <li><a class="dropdown-item" href="#">2</a></li>
-                <li><a class="dropdown-item" href="#">3</a></li>
+            <ul class="dropdown-menu ps-3">
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Ahmedabad" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Ahmedabad
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Kolkata" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Kolkata
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Delhi" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Delhi
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Mumbai" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mumbai
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Chennai" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chennai
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Pune" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pune
+                    </label>
+                </li>
             </ul>
         </div>
         <div class="vr" id="vert"></div>
@@ -144,28 +146,9 @@
         <div class="vr" id="vert"></div>
     </div>
     <hr style="margin: 0px;">
-
-    <div style="margin-left: 65px;">
-        <button class="btn btn-outline-secondary" id="sort">Tree Plantation
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Canada
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Toronto
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Montreal
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Environment
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Nutrition
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Anthropology
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Environmental Science
-            <img src="images/cancel.png"></button>
-        <span style="margin-left: 10px;" id="sort">
-            <a href="#" style="text-decoration:none; color:#333333; font-size: 13px;">Clear all</a></span>
+    <div class="filters-section d-flex align-items-center flex-wrap justify-content-center">
     </div>
-    <div class="container-fluid">
+    <div class="container mt-2">
         <div class="row">
             <!--no of mission-->
             <div class="col-lg-10 my-auto no_of_mission">
@@ -179,7 +162,6 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Sort by
                     </a>
-
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Newest</a></li>
                         <li><a class="dropdown-item" href="#">Oldest</a></li>
@@ -193,13 +175,12 @@
 
             <!--grid view-->
             <div class="col-lg d-none d-lg-block">
-                <a href="" class="btn p-0 btn-grid mt-1 btn-grid"><img src="./images/grid.png" alt=""></i></a>
-                <a href="" class="btn p-0 btn-list btn-list"><img src="./images/list.png" alt=""></a>
+                <a href="" class="btn p-0 btn-grid mt-1 btn-grid px-2"><img src="./images/grid.png" alt=""></a>
+                <a href="" class="btn p-0 btn-list btn-list px-1"><img src="./images/list.png" alt=""></a>
             </div>
         </div>
     </div>
     <!--fourth row total no of mission and list and grid view end -->
-
 
     <div class="container grid-container mt-2">
         <div class="row">
@@ -246,7 +227,7 @@
                             </div>
                         </div>
                         <div class="border-top border-bottom pb-3 position-relative pt-2">
-                            <div class="d-flex justify-content-evenly mt-2">
+                            <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1 pe-0 me-2">
                                         <img src="./images/Seats-left.png" alt="" width="25px" height="25px">
@@ -261,29 +242,18 @@
                                         <img src="./images/deadline.png" alt="" width="30px" height="30px">
                                     </div>
                                     <div class="px-0">
-                                        <h5 class="mb-0 mt-1">10</h5>
-                                        <p class="mb-0">Seats left</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex mt-2 ps-1">
-                                        <img src="./images/gift.png" class="ps-1" alt="">
-                                        <img src="./images/right.png" class="ps-1" alt="">
-                                        <img src="./images/info.png" class="ps-1" alt="">
-                                    </div>
-
-                                    <div class="ms-3" style="font-size: 15px;">
-                                        Matching gift
+                                        <h5 class="mb-0 mt-1">09/01/2019</h5>
+                                        <p class="mb-0">Deadline</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="roundedSection  text-center position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">From10/01/2019 until 25/02/2019</p>
+                                <p class="mb-0 px-1" style="font-size: 12px;">From10/01/2019 until 25/02/2019</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -330,12 +300,6 @@
                                 <img src="./images/star.png" alt="">
                             </div>
                         </div>
-                        <div class="d-flex pb-3">
-                            <img src="./images/gift.png" class="ps-1" alt="">
-                            <p class="mb-0 ms-2">Matching gift</p>
-                            <img src="./images/right.png" class="ps-1" alt="">
-                            <img src="./images/info.png" height="20px" class="my-auto" class="ps-1" alt="">
-                        </div>
                         <div class="border-top border-bottom pb-3 position-relative pt-2">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex align-items-center">
@@ -343,8 +307,8 @@
                                         <img src="./images/Seats-left.png" alt="" width="25px" height="25px">
                                     </div>
                                     <div class="px-0">
-                                        <h5 class="mb-0 mt-1">10</h5>
-                                        <p class="mb-0">Seats left</p>
+                                        <h5 class="mb-0 mt-1">250</h5>
+                                        <p class="mb-0">Already Volunteered</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -352,18 +316,18 @@
                                         <img src="./images/deadline.png" alt="" width="30px" height="30px">
                                     </div>
                                     <div class="px-0">
-                                        <h5 class="mb-0 mt-1">10</h5>
-                                        <p class="mb-0">Seats left</p>
+                                        <h5 class="mb-0 mt-1">09/01/2019</h5>
+                                        <p class="mb-0">Deadline</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="roundedSection  text-center position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">From10/01/2019 until 25/02/2019</p>
+                                <p class="mb-0 px-1" style="font-size: 12px;">From10/01/2019 until 25/02/2019</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -388,12 +352,7 @@
                             <img src="./images/user.png" alt="" class="ps-2 py-2">
                         </div>
                         <div>
-                            <p class="mb-0 position-absolute px-2" id="missionTheme1">Nutrition</p>
-                            <div class="position-absolute d-flex align-items-center px-2" id="missionTheme2">
-                                <img src="./images/gift.png" width="15px" height="15px" alt="">
-                                <p class="mb-0" style="font-size: 10px;">Matching gift</p>
-                                <img src="./images/right.png" class="ms-2" width="15px" height="15px" alt="">
-                            </div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Nutrition</p>
                         </div>
                     </div>
 
@@ -431,18 +390,18 @@
                                         <img src="./images/deadline.png" alt="" width="30px" height="30px">
                                     </div>
                                     <div class="px-0">
-                                        <h5 class="mb-0 mt-1">10</h5>
-                                        <p class="mb-0">Seats left</p>
+                                        <h5 class="mb-0 mt-1">09/01/2019</h5>
+                                        <p class="mb-0">Deadline</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">Ongoing Opportunity</p>
+                            <div class="roundedSection  text-center position-absolute" id="missionDeadline">
+                                <p class="mb-0 px-1" style="font-size: 12px;">Ongoing Opportunity</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -504,12 +463,12 @@
                                 </div>
                             </div>
                             <div class="position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">Ongoing Opportunity</p>
+                                <p class="mb-0 px-1" style="font-size: 12px;">Ongoing Opportunity</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -583,12 +542,12 @@
                                 </div>
                             </div>
                             <div class="roundedSection  text-center position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">Plant 10,000 trees</p>
+                                <p class="mb-0 px-1" style="font-size: 12px;">Plant 10,000 trees</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -650,12 +609,12 @@
                                 </div>
                             </div>
                             <div class="roundedSection  text-center position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">Plant 10,000 trees</p>
+                                <p class="mb-0 px-1" style="font-size: 12px;">Plant 10,000 trees</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -685,17 +644,14 @@
                             <img src="./images/user.png" alt="" class="ps-2 py-2">
                         </div>
                         <div>
-                            <p class="mb-0 position-absolute px-2" id="missionTheme">Education</p>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Environment</p>
                         </div>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional
-                            content. This content is a little bit longer.
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional natural lead-in to
-                            additional</p>
+                            content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>
                                 Tree canada
@@ -708,13 +664,36 @@
                                 <img src="./images/selected-star.png" alt="">
                             </div>
                         </div>
-                        <div class="text-center mt-3 border-top pt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                        <div class="border-top border-bottom pb-3 position-relative pt-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="mt-1 pe-0 me-2">
+                                        <img src="./images/Seats-left.png" alt="" width="25px" height="25px">
+                                    </div>
+                                    <div class="px-0">
+                                        <h5 class="mb-0 mt-1">10</h5>
+                                        <p class="mb-0">Seats left</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="mt-1  me-2 p-0">
+                                        <img src="./images/deadline.png" alt="" width="30px" height="30px">
+                                    </div>
+                                    <div class="px-0">
+                                        <h5 class="mb-0 mt-1">09/01/2019</h5>
+                                        <p class="mb-0">Deadline</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roundedSection  text-center position-absolute" id="missionDeadline">
+                                <p class="mb-0 px-1" style="font-size: 12px;">From10/01/2019 until 25/02/2019</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
@@ -778,13 +757,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="roundedSection  text-center position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">From10/01/2019 until 25/02/2019</p>
+                            <div class="roundedSection text-center position-absolute" id="missionDeadline">
+                                <p class="mb-0 px-1" style="font-size: 12px;">From10/01/2019 until 25/02/2019</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
 
@@ -809,7 +788,7 @@
                             <img src="./images/user.png" alt="" class="ps-2 py-2">
                         </div>
                         <div>
-                            <p class="mb-0 position-absolute px-2" id="missionTheme">Nutrtion</p>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Nutrition</p>
                         </div>
                     </div>
 
@@ -853,12 +832,12 @@
                                 </div>
                             </div>
                             <div class="roundedSection  text-center position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">Ongoing Opportunity</p>
+                                <p class="mb-0 px-1" style="font-size: 12px;">Ongoing Opportunity</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning">Apply <img src="./images/right-arrow.png"
-                                    alt=""></a>
+                            <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                    src="./images/right-arrow.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -868,43 +847,32 @@
     <!--Pagination start-->
     <div aria-label="Page navigation example">
         <ul class="pagination  justify-content-center">
-            <li class="page-item px-2"><a class="page-link" href="#"><img
-                        src="./images/left.png" alt=""></a></li>
-            <li class="page-item px-2 "><a class="page-link " href="#"><img
-                        src="./images/previous.png" alt=""></a></li>
-            <li class="page-item px-2"><a class="page-link text-dark" href="#">1</a></li>
+            <li class="page-item px-2 "><a class="page-link " href="#"><img src="./images/previous.png" alt=""></a></li>
+            <li class="page-item px-2"><a class="page-link" href="#"><img src="./images/left.png" alt=""></a></li>
+            <li class="page-item px-2"><a class="page-link active" href="#">1</a></li>
             <li class="page-item px-2"><a class="page-link text-dark" href="#">2</a></li>
             <li class="page-item px-2"><a class="page-link text-dark" href="#">3</a></li>
-            <li class="page-item px-2"><a class="page-link" href="#"><img
-                        src="./images/next.png" alt=""></a></li>
-            <li class="page-item px-2"><a class="page-link" href="#"><img
-                        src="./images/right-arrow1.png" alt=""></a></li>
+            <li class="page-item px-2"><a class="page-link text-dark" href="#">4</a></li>
+            <li class="page-item px-2"><a class="page-link text-dark" href="#">5</a></li>
+            <li class="page-item px-2"><a class="page-link" href="#"><img src="./images/right-arrow1.png" alt=""></a>
+            <li class="page-item px-2"><a class="page-link" href="#"><img src="./images/next.png" alt=""></a></li>
+            </li>
         </ul>
     </div>
     <!--Pagination end-->
 
     <!--footer satrt-->
-    <div class="copyright mt-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="copyright-menu">
-                        <ul>
-                            <li>
-                                <a href="#" class="text-light">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-light">Cookie Policy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-light">Terms of Use</a>
-                            </li>
-
-                        </ul>
-                    </div>
+    <div class="mt-5 bg-dark">
+        <div class="container-fluid">
+            <div class="pt-2 text-end px-2"><a href=""><img src="images/cancel1.png"></a></div>
+            <div class="d-flex align-items-center pb-2 mx-5 px-5">
+                <div class="py-3">
+                    <div class="text-light">This website makes use of cookies to enhance browsing experience and provide
+                        additional functionality.</div>
+                    <div><a href="#" style="color: #F88634;">Privacy Policy</a></div>
                 </div>
-                <div class="col-md-6 rights">
-                    <span class="text-light"> © 2019 Optimy.com. All Right Reserved</span>
+                <div class="mx-auto">
+                    <a href="" class="btn btn-outline-warning rounded-5">I Agree</a>
                 </div>
             </div>
         </div>

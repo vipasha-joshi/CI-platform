@@ -1,21 +1,4 @@
-// const itemList = document.querySelector('.item-list');
-// const gridViewBtn = document.getElementById('grid-active-btn');
-// const detailsViewBtn = document.getElementById('details-active-btn');
-
-// gridViewBtn.classList.add('active-btn');
-
-// gridViewBtn.addEventListener('click', () => {
-//     gridViewBtn.classList.add('active-btn');
-//     detailsViewBtn.classList.remove('active-btn');
-//     itemList.classList.remove('details-active');
-// });
-
-// detailsViewBtn.addEventListener('click', () => {
-//     detailsViewBtn.classList.add('active-btn');
-//     gridViewBtn.classList.remove("active-btn");
-//     itemList.classList.add("details-active");
-// });
-
+//grid and list
 function showList(e) {
     var $gridCont = $('.grid-container');
     e.preventDefault();
@@ -30,28 +13,72 @@ function gridList(e) {
 $(document).on('click', '.btn-grid', gridList);
 $(document).on('click', '.btn-list', showList);
 
-const checkboxes = document.querySelectorAll(".checkbox");
+//filters
+var checkboxes = document.querySelectorAll(".checkbox");
 
-const filterList = document.getElementById("selected-filters");
+
+let filtersSection = document.querySelector(".filters-section");
 
 var listArray = [];
 
-for (var checkbox of checkboxes) {
-    checkbox.addEventListener('click', function () {
-        if (this.checked == true) {
-            listArray.push(this.value);
-            filterList.innerHTML = listArray.join(' / ');
-            filterList.createElement('p');
+var filterList = document.querySelector(".filter-list");
 
-            console.log(this.value);
+var len = listArray.length;
+
+for (var checkbox of checkboxes) {
+    checkbox.addEventListener("click", function () {
+        if (this.checked == true) {
+            addElement(this, this.value);
         }
         else {
-            console.log('you unchecked the checkbox');
-            listArray = listArray.filter(e => e !== this.value);
-            filterList.innerHTML = listArray.join(' / ');
+
+            removeElement(this.value);
+            console.log("unchecked");
         }
     })
 }
+
+
+function addElement(current, value) {
+    let filtersSection = document.querySelector(".filters-section");
+
+    let createdTag = document.createElement('span');
+    createdTag.classList.add('filter-list');
+    createdTag.classList.add('ps-3');
+    createdTag.classList.add('pe-1');
+    createdTag.classList.add('me-2');
+    createdTag.innerHTML = value;
+
+    createdTag.setAttribute('id', value);
+    let crossButton = document.createElement('button');
+    crossButton.classList.add("filter-close-button");
+    let cross = '&times;'
+
+    crossButton.addEventListener('click', function () {
+        let elementToBeRemoved = document.getElementById(value);
+
+        console.log(elementToBeRemoved);
+        console.log(current);
+        elementToBeRemoved.remove();
+
+        current.checked = false;
+    })
+
+    crossButton.innerHTML = cross;
+    // let crossButton = '&times;'
+
+    createdTag.appendChild(crossButton);
+    filtersSection.appendChild(createdTag);
+
+}
+
+function removeElement(value) {
+    let filtersSection = document.querySelector(".filters-section");
+    let elementToBeRemoved = document.getElementById(value);
+    filtersSection.removeChild(elementToBeRemoved);
+}
+
+//star rating
 $(function () {
 
     $(document).on({
@@ -78,3 +105,33 @@ $(function () {
 
 });
 
+//slideshow gallery-carousel
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

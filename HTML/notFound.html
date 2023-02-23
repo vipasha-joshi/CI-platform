@@ -15,81 +15,51 @@
 </head>
 
 <body>
-    <nav class="navbar nav" id="large">
-        <div class="container row">
-            <div class="col-lg-4 col-md-2 text-end">
-                <a href="#" style="text-decoration: none; color: #333333;">Stories</a>
-            </div>
-            <div class="dropdown col-lg-6 col-md-2">
-                <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                    style="text-decoration: none; color: #333333;">Policy
-                    <img src="./images/drop-down.png"></a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                </ul>
-            </div>
-            <div class="dropdown col-lg-2 col-md-2">
-                <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
-                    style="border: none; background-color: white;">
-                    <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
-                    <span id="drpdwn">Evan Donohue</span>
-                    <img src="./images/drop-down.png" id="drpdwn">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Help</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </nav>
+    <nav class="container navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar nav" id="small">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./images/user-img.png" width="40px" height="40px"
-                    class="rounded-5"></a>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item active mx-2">
+                    <a class="nav-link" href="#">Stories</a>
+                </div>
+                <div class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Policy
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img src="./images/list.png">
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mt-3 mt-lg-0">
-                    <li class="nav-item mx-2 mx-lg-1">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            Stories
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2 mx-lg-1">
-                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                            style="text-decoration: none; color: #333333;">Policy
-                            <img src="./images/drop-down.png"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">2</a></li>
-                            <li><a class="dropdown-item" href="#">3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2 mx-lg-1 mt-2">
-                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                            style="text-decoration: none; color: #333333;">Evan Donohue
-                            <img src="./images/drop-down.png"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">My Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Help</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
+                        <img src="./images/drop-down.png" id="drpdwn"></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav ">
+                <div class="nav-item dropdown">
+                    <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
+                        style="border: none; background-color: white;">
+                        <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
+                        <span id="drpdwn">Evan Donohue</span>
+                        <img src="./images/drop-down.png" id="drpdwn">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
     <hr style="margin:0px;">
-    <div class="container row">
+    <div class="container row mx-5">
         <div class="col-lg-1 text-end mt-2">
             <img src="./images/search.png" alt="search" id="search">
         </div>
@@ -121,15 +91,33 @@
                     </label>
                 </li>
                 <li class="form-check">
-                    <input class="form-check-input checkbox" type="checkbox" value="Vadodara" id="flexCheckDefault">
+                    <input class="form-check-input checkbox" type="checkbox" value="Kolkata" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                        Vadodara
+                        Kolkata
                     </label>
                 </li>
                 <li class="form-check">
-                    <input class="form-check-input checkbox" type="checkbox" value="Surat" id="flexCheckDefault">
+                    <input class="form-check-input checkbox" type="checkbox" value="Delhi" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                        Surat
+                        Delhi
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Mumbai" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mumbai
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Chennai" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chennai
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Pune" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pune
                     </label>
                 </li>
             </ul>
@@ -160,51 +148,39 @@
     </div>
     <hr style="margin: 0px;">
 
-    <div id="selected-filters" class="px-1">
-
+    <div class="filters-section d-flex align-items-center flex-wrap justify-content-center">
     </div>
+    <div class="container mt-2">
+        <div class="row">
+            <!--no of mission-->
+            <div class="col-lg-10 my-auto no_of_mission">
+                <p class="mb-0 ps-0 fs-4 ms-1">Explore <strong>72 missions</strong> </p>
+            </div>
 
-    <!-- <div style="margin-left: 65px;">
-        <button class="btn btn-outline-secondary" id="sort">Tree Plantation
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Canada
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Toronto
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Montreal
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Environment
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Nutrition
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Anthropology
-            <img src="images/cancel.png"></button>
-        <button class="btn btn-outline-secondary" id="sort">Environmental Science
-            <img src="images/cancel.png"></button>
-        <span style="margin-left: 10px;" id="sort">
-            <a href="#" style="text-decoration:none; color:#333333; font-size: 13px;">Clear all</a></span>
-    </div> -->
-    <div class="container row" id="m">
-        <h3 class="col-lg-8">Explore <b>72 missions</b></h3>
-        <div class="dropdown col-lg-2 col-md-2">
-            <button class="dropdown form-control" type="button" data-bs-toggle="dropdown"
-                style="background-color: white; text-align: left;">
-                <span>Sort by</span>
-                <img src="./images/drop-down.png" class="float-end" style="margin-top:8px;">
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">1</a></li>
-                <li><a class="dropdown-item" href="#">2</a></li>
-                <li><a class="dropdown-item" href="#">3</a></li>
-            </ul>
-        </div>
-        <div class="col-lg-1">
-            <button type="button" style="border:none; border-radius: 40%;" id="grid-active-btn"><img
-                    src="images/grid.png"></button>
-        </div>
-        <div class="col-lg-1">
-            <button type="button" style="border:none; border-radius: 50%; background-color: white;"
-                id="details-active-btn"><img src="images/list.png"></button>
+            <!--sort by section-->
+            <div class="col-lg-1 d-none d-lg-block">
+                <div class="dropdown float-end">
+                    <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort by
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Newest</a></li>
+                        <li><a class="dropdown-item" href="#">Oldest</a></li>
+                        <li><a class="dropdown-item" href="#">Lowest available seats</a></li>
+                        <li><a class="dropdown-item" href="#">Highest available seats</a></li>
+                        <li><a class="dropdown-item" href="#">Sort by my favourite</a></li>
+                        <li><a class="dropdown-item" href="#">Sort by my deadline</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--grid view-->
+            <div class="col-lg d-none d-lg-block">
+                <a href="" class="btn p-0 btn-grid mt-1 btn-grid px-2"><img src="./images/grid.png" alt=""></a>
+                <a href="" class="btn p-0 btn-list btn-list px-1"><img src="./images/list.png" alt=""></a>
+            </div>
         </div>
     </div>
     <div class="text-center fs-4 mt-5">
@@ -212,9 +188,7 @@
     </div>
     <div class="text-center mt-3 ">
         <a class="btn btn-outline-warning" style="border-radius: 20px;"> <strong class="fs-6">Submit new mission
-            </strong> <img src="./Images/HTML-Assignemnt-Assets/CI Platform Assets/right-arrow.png" class="pb-1 ps-1"
-                alt=""></a>
-
+            </strong> <img src="./images/right-arrow.png" class="pb-1 ps-1" alt=""></a>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -228,4 +202,5 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -15,76 +15,45 @@
 </head>
 
 <body>
-    <nav class="navbar nav" id="large">
-        <div class="container row">
-            <div class="col-lg-4 col-md-2 text-end">
-                <a href="#" style="text-decoration: none; color: #333333;">Stories</a>
-            </div>
-            <div class="dropdown col-lg-6 col-md-2">
-                <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                    style="text-decoration: none; color: #333333;">Policy
-                    <img src="./images/drop-down.png"></a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                </ul>
-            </div>
-            <div class="dropdown col-lg-2 col-md-2">
-                <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
-                    style="border: none; background-color: white;">
-                    <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
-                    <span id="drpdwn">Evan Donohue</span>
-                    <img src="./images/drop-down.png" id="drpdwn">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Help</a></li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </nav>
+    <nav class="container navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <nav class="navbar nav" id="small">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./images/user-img.png" width="40px" height="40px"
-                    class="rounded-5"></a>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item active mx-2">
+                    <a class="nav-link" href="#">Stories</a>
+                </div>
+                <div class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Policy
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img src="./images/list.png">
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mt-3 mt-lg-0">
-                    <li class="nav-item mx-2 mx-lg-1">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            Stories
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2 mx-lg-1">
-                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                            style="text-decoration: none; color: #333333;">Policy
-                            <img src="./images/drop-down.png"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">2</a></li>
-                            <li><a class="dropdown-item" href="#">3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2 mx-lg-1 mt-2">
-                        <a href="#" class="dropdown" data-bs-toggle="dropdown"
-                            style="text-decoration: none; color: #333333;">Evan Donohue
-                            <img src="./images/drop-down.png"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">My Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Help</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
+                        <img src="./images/drop-down.png" id="drpdwn"></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav ">
+                <div class="nav-item dropdown">
+                    <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
+                        style="border: none; background-color: white;">
+                        <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
+                        <span id="drpdwn">Evan Donohue</span>
+                        <img src="./images/drop-down.png" id="drpdwn">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -92,52 +61,50 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col-lg-6 mt-2">
-                <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png" alt="" width="100%"
-                    height="75%">
-                <div class="my-3">
-                    <div class="carousel slide" data-ride="carousel" id="multi_item">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-3"><img class="d-block w-100"
-                                            src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png"
-                                            alt="1 slide"></div>
-                                    <div class="col-lg-3"><img class="d-block w-100" src="images/img1.png"
-                                            alt="2 slide"></div>
-                                    <div class="col-lg-3"><img class="d-block w-100"
-                                            src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
-                                            alt="3 slide">
-                                    </div>
-                                    <div class="col-lg-3"><img class="d-block w-100" src="images/img11.png"
-                                            alt="4 slide">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-3"><img class="d-block w-100"
-                                            src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
-                                            alt="5 slide"></div>
-                                    <div class="col-lg-3"><img class="d-block w-100" src="images/image1.png"
-                                            alt="6 slide"></div>
-                                    <div class="col-lg-3"><img class="d-block w-100" src="images/img11.png"
-                                            alt="7 slide">
-                                    </div>
-                                    <div class="col-lg-3"><img class="d-block w-100"
-                                            src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
-                                            alt="8 slide">
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Container for the image gallery -->
+                <div id="container">
+
+                    <!-- Full-width images -->
+                    <div class="mySlides">
+                        <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/img1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/img11.png" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Thumbnail images -->
+                    <div class="row mt-3">
+                        <div class="col">
+                            <img class="demo cursor"
+                                src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                                style="width:100%" onclick="currentSlide(1)" alt="The Woods">
                         </div>
-                        <a class="carousel-control-prev" href="#multi_item" role="button" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#multi_item" role="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col">
+                            <img class="demo cursor" src="images/img1.png" style="width:100%" onclick="currentSlide(2)"
+                                alt="Cinque Terre">
+                        </div>
+                        <div class="col">
+                            <img class="demo cursor"
+                                src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                                style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="col">
+                            <img class="demo cursor" src="images/img11.png" style="width:100%" onclick="currentSlide(4)"
+                                alt="Northern Lights">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -213,22 +180,22 @@
                     </div>
                 </div>
                 <div class="row column-gap-3 mx-auto d-flex justify-content-center mt-1">
-                    <div class="border rounded-0 col-lg-2 px-3 pt-1" style="height: 130px; width:130px;">
+                    <div class="border rounded-0 col-lg col-md px-3 pt-1" style="height: 130px; width:130px;">
                         <img src="images/pin1.png" alt="pin"><br><br>
                         <p class="text-muted" style="font-size: small;">City</p>
                         <p style="font-size: 13px;">London</p>
                     </div>
-                    <div class="border rounded-0 col-lg-2 px-3 pt-1" style="height: 130px; width:130px;">
+                    <div class="border rounded-0 col-lg col-md px-3 pt-1" style="height: 130px; width:130px;">
                         <img src="images/web.png" alt="pin"><br><br>
                         <p class="text-muted" style="font-size: small;">Theme</p>
                         <p style="font-size: 13px;">Environment</p>
                     </div>
-                    <div class="border rounded-0 col-lg-2 px-3 pt-1" style="height: 130px; width:130px;">
+                    <div class="border rounded-0 col-lg col-md px-3 pt-1" style="height: 130px; width:130px;">
                         <img src="images/calender.png" alt="pin"><br><br>
                         <p class="text-muted" style="font-size: small;">Date</p>
                         <p style="font-size: 13px;">Ongoing Opportunity</p>
                     </div>
-                    <div class="border rounded-0 col-lg-2 px-3 pt-1" style="height: 130px; width:130px;">
+                    <div class="border rounded-0 col-lg col-md px-3 pt-1" style="height: 130px; width:130px;">
                         <img src="images/organization.png" alt="pin"><br><br>
                         <p class="text-muted" style="font-size: small;">Organization</p>
                         <p style="font-size: 13px;">CSE Network</p>
@@ -240,9 +207,225 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <div class="row">
+            <div class="col-lg-8 mt-5">
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                            aria-controls="ex1-tabs-1" aria-selected="true">Mission</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab"
+                            aria-controls="ex1-tabs-2" aria-selected="false">Organization</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab"
+                            aria-controls="ex1-tabs-3" aria-selected="false">Comments</a>
+                    </li>
+                </ul>
+                <hr>
+                <!-- Tabs navs -->
+
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                        <h5>Introduction</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, consequuntur nisi natus
+                            doloremque ex neque tenetur, molestias aperiam sunt quos blanditiis accusantium voluptate
+                            quasi
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis cumque incidunt
+                            voluptas
+                            repellendus? Ab nam voluptas laborum, cumque necessitatibus beatae quaerat, impedit tempora
+                            eaque</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi adipisci, quisquam,
+                            officia
+                            voluptas nobis ab laudantium esse dolore autem, et ratione magnam aliquid voluptate
+                            voluptates
+                            magni
+                            assumenda nihil! Dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                            sapiente</p>
+                        <h5>Challenge</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad
+                            minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <h5>Documents</h5>
+                        <div class="d-flex align-content-center mt-3">
+                            <button class="form-control rounded-5 m-1"><img src="images/pdf.png">
+                                lorem-ipsum.pdf</button>
+                            <button class="form-control rounded-5 m-1"><img src="images/doc.png">
+                                at_vero_eos_accusamus.doc</button>
+                            <button class="form-control rounded-5 m-1"><img src="images/xlsx.png">
+                                important_doc.xls</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ab quod quos aut saepe cum
+                            dignissimos eius veniam. Eius vitae odit asperiores tempore magni? Ipsum velit aliquam
+                            voluptas
+                            ut consectetur.</p>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <textarea rows="3" cols="100" placeholder=" Enter your comments..."></textarea>
+                        <a href="" class="btn btn-outline-warning rounded-5 mt-3">Post Comment</a>
+                        <div class="row d-flex align-content-center mt-5">
+                            <div class="col-lg-2"><img src="images/volunteer2.png" style="border-radius: 50%;"></div>
+                            <div class="col">
+                                <p>Margaret Walsh</p>
+                                <p class="text-muted mt-0">Monday, October 21, 2019, 4:37pm</p>
+                                <p>Nice mission great opportunity for people</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex align-content-center mt-5">
+                            <div class="col-lg-2"><img src="images/volunteer8.png" style="border-radius: 50%;"></div>
+                            <div class="col">
+                                <p>Kane Williamson</p>
+                                <p class="text-muted mt-0">Monday, October 21, 2019, 4:37pm</p>
+                                <p>Nice mission great opportunity for people</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex align-content-center mt-5">
+                            <div class="col-lg-2"><img src="images/volunteer5.png" style="border-radius: 50%;"></div>
+                            <div class="col">
+                                <p>Ronald Corb</p>
+                                <p class="text-muted mt-0">Monday, October 21, 2019, 4:30m</p>
+                                <p>Nice mission great opportunity for people</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex align-content-center mt-5">
+                            <div class="col-lg-2"><img src="images/volunteer3.png" style="border-radius: 50%;"></div>
+                            <div class="col">
+                                <p>Ian McCallam</p>
+                                <p class="text-muted mt-0">Monday, October 21, 2019, 5:50am</p>
+                                <p>Nice mission great opportunity for people</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tabs content -->
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="border rounded-0 py-4 px-4">
+                    <h5>Information</h5>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">Skills</p>
+                        <p class="col text-start">Botany</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">Days</p>
+                        <p class="col text-start">Daily</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="col-lg-3">Rating</p>
+                        <p class="col">
+                            <img src="images/selected-star.png">
+                            <img src="images/selected-star.png">
+                            <img src="images/selected-star.png">
+                            <img src="images/selected-star.png">
+                            <img src="images/star.png">
+                            (by 5 volunteers)
+                        </p>
+                    </div>
+                </div>
+                <div class="border rounded-0 py-3 px-2 mt-4">
+                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                                aria-controls="ex1-tabs-1" aria-selected="true"
+                                style="font-size: larger; font-weight: 500;">Recent Volunteers</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tabs-1">
+                        <div class="row d-flex justify-content-evenly">
+                            <div class="col-lg-4 col">
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Andrew Johnson</p>
+                            </div>
+                            <div class="col-lg-4 col">
+                                <img src="images/volunteer2.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Charles Vigue</p>
+                            </div>
+                            <div class="col-lg-4 col">
+                                <img src="images/volunteer3.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Kathryn Roberts</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-4">
+                                <img src="images/volunteer4.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Estella Fowles</p>
+                            </div>
+                            <div class="col col-lg-4">
+                                <img src="images/volunteer5.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Rose Lewis</p>
+                            </div>
+                            <div class="col col-lg-4">
+                                <img src="images/volunteer6.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Raymond Pabon</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-4">
+                                <img src="images/volunteer7.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Travis Steen</p>
+                            </div>
+                            <div class="col col-lg-4">
+                                <img src="images/volunteer8.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Sarah Santillan</p>
+                            </div>
+                            <div class="col col-lg-4">
+                                <img src="images/volunteer9.png" style="border-radius: 50%;" height="70px" width="70px"
+                                    class="mx-3">
+                                <p class="mt-1 text-muted text-center" style="font-size: 13px;">Linda Richards</p>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><img src="images/left.png"></span>
+                                </a>
+                            </li>
+                            <li class="page-item text-center text-muted"><a class="page-link" href="#"
+                                    style="color:#414141">1-9 of 25 Recent Volunteers</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><img src="images/arrow.png"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
         <div>
-            <h2 class="text-muted text-center mb-3" style="font-weight: lighter;">Related Missions</h2>
+            <h2 class="text-muted text-center mb-5" style="font-weight: lighter;">Related Missions</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
@@ -298,8 +481,8 @@
                                 </div>
                             </div>
                             <div class="text-center mt-3">
-                                <a href="" class="btn btn-outline-warning rounded-5">Apply <img src="./images/right-arrow.png"
-                                        alt=""></a>
+                                <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                        src="./images/right-arrow.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -371,8 +554,8 @@
                                 </div>
                             </div>
                             <div class="text-center mt-3">
-                                <a href="" class="btn btn-outline-warning rounded-5">Apply <img src="./images/right-arrow.png"
-                                        alt=""></a>
+                                <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                        src="./images/right-arrow.png" alt=""></a>
                             </div>
                         </div>
 
@@ -436,8 +619,8 @@
                                 </div>
                             </div>
                             <div class="text-center mt-3">
-                                <a href="" class="btn btn-outline-warning rounded-5">Apply <img src="./images/right-arrow.png"
-                                        alt=""></a>
+                                <a href="" class="btn btn-outline-warning rounded-5">Apply <img
+                                        src="./images/right-arrow.png" alt=""></a>
                             </div>
                         </div>
 
@@ -446,6 +629,12 @@
                 </div>
             </div>
         </div>
+    </div>
+    <hr>
+    <div class="mx-5">
+        <a href="#" style="text-decoration: none;">
+            <p class="text-muted mt-5">Privacy Policy</p>
+        </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
