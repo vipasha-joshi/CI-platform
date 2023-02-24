@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Listing</title>
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="container navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item active mx-2">
+                    <a class="nav-link" href="#">Stories</a>
+                </div>
+                <div class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Policy
+
+                        <img src="./images/drop-down.png" id="drpdwn"></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav ">
+                <div class="nav-item dropdown">
+                    <button class="dropdown profile" type="button" data-bs-toggle="dropdown"
+                        style="border: none; background-color: white;">
+                        <img src="./images/user-img.png" width="40px" height="40px" class="rounded-5">
+                        <span id="drpdwn">Evan Donohue</span>
+                        <img src="./images/drop-down.png" id="drpdwn">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr style="margin:0px;">
+    <div class="container row mx-5">
+        <div class="col-lg-1 text-end mt-2">
+            <img src="./images/search.png" alt="search" id="search">
+        </div>
+        <div class="col-lg-6 mt-1 col-md-12 col-sm-4">
+            <input class="form-control" type="text" placeholder="Search mission..." aria-label="Search"
+                style="border: none;">
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">Country
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">City
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu ps-3">
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Ahmedabad" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Ahmedabad
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Kolkata" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Kolkata
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Delhi" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Delhi
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Mumbai" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Mumbai
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Chennai" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chennai
+                    </label>
+                </li>
+                <li class="form-check">
+                    <input class="form-check-input checkbox" type="checkbox" value="Pune" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pune
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">Theme
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+        <div class="dropdown col-lg-1 col-md-3 col-sm-2">
+            <p class="dropdown mt-2" data-bs-toggle="dropdown">Skills
+                <img src="./images/drop-down.png" class="float-end mt-2">
+            </p>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+        </div>
+        <div class="vr" id="vert"></div>
+    </div>
+    <hr style="margin: 0px;">
+
+    <div class="filters-section d-flex align-items-center flex-wrap justify-content-center">
+    </div>
+
+    <div class="item">
+        <div class="box bg">
+            <div class="cover">
+                <p class="name text-center m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                    dolor nesciunt laborum quia nemo voluptatem facere suscipit quod iure autem. Optio libero impedit
+                    tempora non blanditiis ut quam vel! Quasi.</p>
+                <button type="button" class="form-control title m-auto mt-4 rounded-5">Share your Story <img
+                        src="images/right-arrow2.png"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- First row of cards -->
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box"
+                                style="background-image: url(images/Grow-Trees-On-the-path-to-environment-sustainability-2.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Customer Experience</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box"
+                                style="background-image: url(images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Updates</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer4.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box" style="background-image: url(images/image2.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Customer Experience</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row of cards -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box"
+                                style="background-image: url(images/Plantation-and-Afforestation-programme.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Customer Experience</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box" style="background-image: url(images/img1.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Updates</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer4.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box" style="background-image: url(images/img11.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Customer Experience</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third row of cards -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box"
+                                style="background-image: url(images/Grow-Trees-On-the-path-to-environment-sustainability-2.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Customer Experience</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box"
+                                style="background-image: url(images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Updates</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer4.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <div class="item">
+                            <div class="box" style="background-image: url(images/image2.png);">
+                                <div class="cover">
+                                    <button type="button" class="form-control title m-auto mt-4 rounded-5">View Details
+                                        <img src="images/right-arrow2.png"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-0 position-absolute px-2" id="missionTheme">Customer Experience</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="d-flex">
+                            <div>
+                                <img src="images/volunteer1.png" style="border-radius: 50%;" class="img-fluid"
+                                    width="50px" height="50px">
+                            </div>
+                            <div>
+                                <p class="m-2">Andrew Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pagination start-->
+    <div aria-label="Page navigation example">
+        <ul class="pagination  justify-content-center my-5">
+            <li class="page-item px-2 "><a class="page-link " href="#"><img src="./images/previous.png" alt=""></a></li>
+            <li class="page-item px-2"><a class="page-link" href="#"><img src="./images/left.png" alt=""></a></li>
+            <li class="page-item px-2"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item px-2"><a class="page-link text-dark" href="#">2</a></li>
+            <li class="page-item px-2"><a class="page-link text-dark" href="#">3</a></li>
+            <li class="page-item px-2"><a class="page-link text-dark" href="#">4</a></li>
+            <li class="page-item px-2"><a class="page-link text-dark" href="#">5</a></li>
+            <li class="page-item px-2"><a class="page-link" href="#"><img src="./images/right-arrow1.png" alt=""></a>
+            <li class="page-item px-2"><a class="page-link" href="#"><img src="./images/next.png" alt=""></a></li>
+            </li>
+        </ul>
+    </div>
+    <!--Pagination end-->
+    <hr>
+    <!-- footer -->
+    <div class="mx-5 my-5">
+        <a href="#" style="text-decoration: none;">
+            <p class="text-muted mt-2 pb-4">Privacy Policy</p>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="js/homeScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
