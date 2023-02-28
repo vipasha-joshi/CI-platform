@@ -1,0 +1,14 @@
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\bin\Debug\net6.0\CI_platform.Repository.deps.json
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\bin\Debug\net6.0\CI_platform.Repository.runtimeconfig.json
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\bin\Debug\net6.0\CI_platform.Repository.dll
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\bin\Debug\net6.0\CI_platform.Repository.pdb
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.csproj.AssemblyReference.cache
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.AssemblyInfoInputs.cache
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.AssemblyInfo.cs
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.csproj.CoreCompileInputs.cache
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.dll
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\refint\CI_platform.Repository.dll
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.pdb
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\CI_platform.Repository.genruntimeconfig.cache
+C:\Users\vipas\OneDrive\Desktop\Sem8 Project\CI platform\MVC\CI_platform\CI_platform.Repository\obj\Debug\net6.0\ref\CI_platform.Repository.dll
